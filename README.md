@@ -19,11 +19,11 @@ The official project submission repository for **DEFINE 4.0 — The World's Real
 
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| Ghanasyam S | Role | https://github.com/ghanasyam6138-dev | [Profile](https://linkedin.com/in/username) |
-| Maria Teresa Thomas | Role | https://github.com/mariateresathomas | [Profile](https://linkedin.com/in/username) |
-| Joshua S Robin | Role | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| Adith K | Role | https://github.com/adithk7 | [Profile](https://linkedin.com/in/username) |
-| Nandita M Menon | Role | https://github.com/nandita-mm | [Profile](https://linkedin.com/in/username) |
+| Ghanasyam S | Role | https://github.com/ghanasyam6138-dev | www.linkedin.com/in/ghanasyams |
+| Maria Teresa Thomas | Role | https://github.com/mariateresathomas | www.linkedin.com/in/mariateresathomas |
+| Joshua S Robin | Role | https://github.com/Joshua-S-Robin | https://www.linkedin.com/in/joshua-s-robin/ |
+| Adith K | Role | https://github.com/adithk7 | https://www.linkedin.com/in/adith-k-1a2092368/ |
+| Nandita M Menon | Role | https://github.com/nandita-mm | https://www.linkedin.com/in/nandita-m-menon?utm_source=share_via&utm_content=profile&utm_medium=member_android |
 
 ---
 
