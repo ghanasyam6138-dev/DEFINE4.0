@@ -4,7 +4,7 @@ The official project submission repository for **DEFINE 4.0 — The World's Real
 
 ---
 
-# < Project Name >
+# ParkSmart
 
 <!-- Add your project cover image below -->
 
@@ -19,11 +19,11 @@ The official project submission repository for **DEFINE 4.0 — The World's Real
 
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| Ghanasyam S | Role | https://github.com/ghanasyam6138-dev | www.linkedin.com/in/ghanasyams |
-| Maria Teresa Thomas | Role | https://github.com/mariateresathomas | www.linkedin.com/in/mariateresathomas |
-| Joshua S Robin | Role | https://github.com/Joshua-S-Robin | https://www.linkedin.com/in/joshua-s-robin/ |
-| Adith K | Role | https://github.com/adithk7 | https://www.linkedin.com/in/adith-k-1a2092368/ |
-| Nandita M Menon | Role | https://github.com/nandita-mm | https://www.linkedin.com/in/nandita-m-menon?utm_source=share_via&utm_content=profile&utm_medium=member_android |
+| Ghanasyam S | Backend | https://github.com/ghanasyam6138-dev | www.linkedin.com/in/ghanasyams |
+| Maria Teresa Thomas | Frontend | https://github.com/mariateresathomas | www.linkedin.com/in/mariateresathomas |
+| Joshua S Robin | Database | https://github.com/Joshua-S-Robin | https://www.linkedin.com/in/joshua-s-robin/ |
+| Adith K | Backend | https://github.com/adithk7 | https://www.linkedin.com/in/adith-k-1a2092368/ |
+| Nandita M Menon | Frontend | https://github.com/nandita-mm | https://www.linkedin.com/in/nandita-m-menon?utm_source=share_via&utm_content=profile&utm_medium=member_android |
 
 ---
 
@@ -31,7 +31,7 @@ The official project submission repository for **DEFINE 4.0 — The World's Real
 
 ## Overview
 
-The Smart Parking & Venue Operations project is a unified software platform that integrates with existing venue hardware to manage both transient and recurring parking sites through a single operator-owned system. It addresses the frustrations of circling for spaces, exit gate queues, and blocked vehicles by providing live space allocation, automated payment processing, and a privacy-preserving driver contact relay. Using a combined edge-box and cloud architecture, the platform delivers a seamless, web app experience for drivers while ensuring venues retain full control of their data and operations.
+The ParkSmart project is a unified software platform that integrates with existing venue hardware to manage both transient and recurring parking sites through a single operator-owned system. It addresses the frustrations of circling for spaces, exit gate queues, and blocked vehicles by providing live space allocation, automated payment processing, and a privacy-preserving driver contact relay. Using a combined edge-box and cloud architecture, the platform delivers a seamless, web app experience for drivers while ensuring venues retain full control of their data and operations.
 
 ## Problem Statement
 
@@ -89,43 +89,101 @@ https://parksmart-demo-234.web.app/
 
 | Category | Technologies |
 |----------|--------------|
-| **Frontend** | Technologies |
-| **Backend** | Technologies |
-| **Database** | Technologies |
-| **APIs / Services** | Technologies |
-| **AI / ML** | Technologies |
-| **DevOps / Deployment** | Technologies |
-| **Other Tools** | Technologies |
+| **Frontend** | React 19, TypeScript 5.9, Vite 8.3, React Router v7 |
+| **Styling & UI** | Vanilla CSS Design System with light theme, custom tokens, and Lucide React icons |
+| **Database & Realtime** | Firebase Realtime Database (`parksmart-demo-234`), LocalStorage Cache Fallback |
+| **Backend & Cloud** | Firebase Cloud Functions (TypeScript), Firebase Admin SDK |
+| **Camera & QR** | Browser `navigator.mediaDevices` WebRTC, `qrcode`, `html5-qrcode` |
+| **Testing** | Vitest with 17 verified business rule invariant tests |
 
 ## System Architecture
 
-<!-- Add your architecture diagram here -->
+## System Architecture
 
-![System Architecture](./assets/architecture.png)
+ParkSmart uses an edge–cloud architecture to provide automated number plate recognition (ANPR), real-time parking management, payment processing, and operational analytics. The system connects on-site cameras and edge services with cloud backend components, databases, driver applications, and operator dashboards.
+
+![ParkSmart System Architecture](./assets/architecture.png)
+
+*Figure: ParkSmart system architecture showing the parking venue edge layer, cloud services, databases, user interfaces, and external integrations.*
 
 ## Key Features
 
-- Feature 1
-- Feature 2
-- Feature 3
-- Feature 4
-- Feature 5
+* **Find My Car:** Easily locate your vehicle using zone or slot-level tracking.
+
+
+* **Advance Reservations:** Pre-book a parking slot or zone before arriving at the venue.
+
+
+* **Service Add-ons:** Add EV charging, car wash, or valet parking directly to the reservation.
+
+
+* **Live Estimates:** View estimated completion times for services like car washes.
+
+
+* **Seamless Billing:** Any upfront reservation deposit is automatically applied to the final parking fee.
+
+
+
+
+* **Accessible Parking:** Dedicated selection options for drivers requiring accessible parking spots.
+
+
+* **Ticket Validations:** Dynamic fee validations based on linked store purchases at malls or duty-free spending/flight details at airports.
+
+
+* **Blocked-Car Alert System:** A privacy-first contact relay allows users or staff to notify the driver of a blocking car via masked calls or push alerts, eliminating the need for public PA announcements.
+
+
+* **Pre-Exit Digital Payments:** Skip the toll gate queue by paying the parking fee directly in the web app before walking to the vehicle.
+
+
+* **Data Protection:** Built-in privacy controls and tokenized license plates ensure user data remains secure and strictly owned by the venue operator.
+
+
+* **Live Operator Console:** Provides venue staff with real-time heat maps of occupancy, hourly arrivals, and vehicle dwell times.
+
+
+* **Sensorless Site Support:** Operates fully even at venues with zero existing hardware sensors by utilizing pillar QR check-ins and smart occupancy engines.
 
 ---
 
 # Setup Instructions
 
-## Prerequisites
+## 🚀 Quick Start & Local Development
 
-Make sure the following are installed before running the project:
-
-- Requirement 1
-- Requirement 2
-- Requirement 3
-
-## Installation
-
+### Prerequisites
+- **Node.js**: v20.x or higher
+- **npm**: v10.x or higher
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ghanasyam6138-dev/DEFINE4.0
+
+### 2. Installation
+Clone or navigate to the project directory:
+```bash
+cd "d:/Parking sys"
+npm install
+```
+
+### 3. Run the Development Server
+```bash
+npm run dev
+```
+Open your browser at `http://localhost:5173`. The application automatically initializes the pre-seeded **Demo Mall Indiranagar** facility and demo credentials.
+
+### 4. Run Test Suite
+To verify all 17 core business logic invariant tests:
+```bash
+npm test
+```
+
+### 5. Build for Production
+To type-check and generate optimized production assets in `dist/`:
+```bash
+npm run build
+```
+
+---
+
+
