@@ -12,8 +12,8 @@ The official project submission repository for **DEFINE 4.0 — The World's Real
 
 ## Team Information
 
-- fsociety:
-- **Track**:
+- **fsociety**:
+- **Software**:
 
 ## Team Members
 
