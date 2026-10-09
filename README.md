@@ -12,17 +12,18 @@ The official project submission repository for **DEFINE 4.0 — The World's Real
 
 ## Team Information
 
-- **Team Name**:
+- fsociety:
 - **Track**:
 
 ## Team Members
 
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| Full Name | Role | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| Full Name | Role | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| Full Name | Role | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| Full Name | Role | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
+| Ghanasyam S | Role | https://github.com/ghanasyam6138-dev | [Profile](https://linkedin.com/in/username) |
+| Maria Teresa Thomas | Role | https://github.com/mariateresathomas | [Profile](https://linkedin.com/in/username) |
+| Joshua S Robin | Role | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
+| Adith K | Role | https://github.com/adithk7 | [Profile](https://linkedin.com/in/username) |
+| Nandita M Menon | Role | https://github.com/nandita-mm | [Profile](https://linkedin.com/in/username) |
 
 ---
 
