@@ -1,0 +1,64 @@
+{
+  "rules": {
+    "parksmart": {
+      ".read": true,
+      "users": {
+        ".read": true,
+        ".write": true,
+        "$userId": {
+          ".validate": "newData.hasChildren(['id', 'name', 'mobile', 'role', 'status'])"
+        }
+      },
+      "parkingAreas": {
+        ".read": true,
+        ".write": "auth != null || true",
+        "$areaId": {
+          ".validate": "newData.hasChildren(['id', 'name', 'isPublished', 'levels', 'tariffs'])"
+        }
+      },
+      "slots": {
+        ".read": true,
+        ".write": true,
+        "$slotId": {
+          ".validate": "newData.hasChildren(['id', 'number', 'status', 'type', 'isBookable'])"
+        }
+      },
+      "bookings": {
+        ".read": true,
+        ".write": true,
+        "$bookingId": {
+          ".validate": "newData.hasChildren(['id', 'bookingNumber', 'customerId', 'slotId', 'status', 'ticketToken'])"
+        }
+      },
+      "visits": {
+        ".read": true,
+        ".write": true,
+        "$visitId": {
+          ".validate": "newData.hasChildren(['id', 'bookingId', 'slotId', 'status', 'entryTimestamp'])"
+        }
+      },
+      "incidents": {
+        ".read": true,
+        ".write": true,
+        "$incidentId": {
+          ".validate": "newData.hasChildren(['id', 'incidentNumber', 'currentStage', 'blockingPlateNormalized'])"
+        }
+      },
+      "tasks": {
+        ".read": true,
+        ".write": true
+      },
+      "shifts": {
+        ".read": true,
+        ".write": true
+      },
+      "auditLogs": {
+        ".read": true,
+        "$logId": {
+          ".write": "!data.exists() && newData.exists()",
+          ".validate": "newData.hasChildren(['id', 'timestamp', 'actorId', 'action'])"
+        }
+      }
+    }
+  }
+}
