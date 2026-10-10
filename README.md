@@ -98,8 +98,6 @@ https://parksmart-demo-234.web.app/
 
 ## System Architecture
 
-## System Architecture
-
 ParkSmart uses an edge–cloud architecture to provide automated number plate recognition (ANPR), real-time parking management, payment processing, and operational analytics. The system connects on-site cameras and edge services with cloud backend components, databases, driver applications, and operator dashboards.
 
 ![ParkSmart System Architecture](./assets/architecture.png)
