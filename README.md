@@ -49,10 +49,6 @@ Solving this is vital because it vastly improves the driver experience through a
 Current parking systems force venues to surrender control of sensitive data to multiple third-party vendors. They also suffer from operational issues like double billing, fail during internet outages, and often require venues to install expensive new hardware. Ultimately, this creates a frustrating experience for drivers, who must juggle multiple apps, proprietary tags, or physical stickers just to manage their parking or resolve blocked-car issues.
 
 ## Solution
-
-Explain your proposed solution and how it addresses the identified problem.
-Describe the core idea, workflow, and key technologies used to build the solution.
-
 Key TechnologiesEdge Processing & Vision: Local edge boxes run Python or Go services, utilizing MQTT brokers and SQLite caches for offline reliability. They employ YOLOv8/11 and OpenCV to process security camera feeds for real-time slot occupancy and plate recognition.Cloud Infrastructure: The single-tenant cloud core uses Postgres and TimescaleDB for persistent data storage, NATS for event streaming, and a dedicated constraint-scoring API for space allocation.Front-End Applications: The driver and staff interfaces are built as React/Next.js Progressive Web Apps (PWAs) connected via WebSockets to display live occupancy maps and alerts without requiring an app store download.Integrations & Privacy: The architecture leverages Exotel APIs for masked calling, external gateways for UPI/FASTag transactions, and an operator-managed Key Management Service (KMS) with HMAC-SHA256 encryption to securely tokenize personal license plate data.
 
 ---
