@@ -57,14 +57,6 @@ Key TechnologiesEdge Processing & Vision: Local edge boxes run Python or Go serv
 
 ---
 
-# Demo
-
-### Demo Video
-
-[Watch Project Demo](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Replace `VIDEO_ID` with your YouTube video ID.
-
 ### Screenshots
 
 <!-- Add screenshots of your project here -->
